@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
-
-import classes from "./MainNavigation.module.css";
-
+import "MainNavigation.module.css";
 function MainNavigation() {
   return (
-    <header className={classes.header}>
-      <div className={classes.logo}>Tech Slinger</div>
+    <div className={header}>
+      <div className={logo}>Tech Slinger</div>
       <nav>
         <ul>
           <li>
@@ -19,7 +17,7 @@ function MainNavigation() {
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 }
 
