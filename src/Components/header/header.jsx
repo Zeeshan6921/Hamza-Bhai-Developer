@@ -4,6 +4,9 @@ import "../header/header.css";
 import logo from "../../logo.svg";
 
 const header = () => {
+  function lun(){
+
+  }
   return (
     <div className="header">
       <div className="left">
@@ -18,7 +21,7 @@ const header = () => {
       </div>
       <div className="button">
         <Link to={"www.google.com"}>Log in</Link>
-        <button>Go</button>
+        <button onClick={lun}>Go</button>
       </div>
     </div>
   );
