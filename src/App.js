@@ -1,17 +1,14 @@
 import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
-
-import HomePage from "./Page Componenets/Home";
-import GamingPage from "./Page Componenets/Gaming";
-import AboutPage from "./Page Componenets/About";
+import HomePage from "./Components/home/home";
+import Header from "./Components/header/header";
 
 function App() {
   return (
     <div>
+      <Header />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/Gaming" element={<GamingPage />} />
-        <Route exact path="/About" element={<AboutPage />} />
       </Routes>
     </div>
   );
